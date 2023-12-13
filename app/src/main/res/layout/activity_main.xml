@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student_details"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:layout_centerHorizontal="true"
+        android:hint="Roll Number"
+        android:layout_below="@+id/tv1">
+
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:layout_below="@+id/et1">
+
+    </EditText>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3"
+        android:layout_centerHorizontal="true"
+        android:hint="Department"
+        android:layout_below="@+id/et2">
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt1"
+        android:text="Insert"
+        android:onClick="insert"
+        android:layout_below="@+id/et3"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt2"
+        android:text="Read"
+        android:layout_below="@+id/bt1"
+        android:layout_centerHorizontal="true"
+        android:onClick="read">
+
+    </Button><Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt3"
+    android:text="Update"
+    android:layout_below="@+id/bt2"
+    android:layout_centerHorizontal="true"
+    android:onClick="update">
+
+</Button><Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt4"
+    android:text="Delete"
+    android:layout_below="@+id/bt3"
+    android:layout_centerHorizontal="true"
+    android:onClick="delete">
+
+</Button>
+</RelativeLayout>
